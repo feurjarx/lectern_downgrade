@@ -1,0 +1,29 @@
+.navbar {
+    color: #34495e;
+    border: 0;
+    border-radius: 0;
+}
+
+.navbar .navbar-header .navbar-brand {
+    padding: 0 10px;
+}
+.navbar .navbar-header .navbar-brand img {
+    max-height: 100%;
+}
+
+.navbar-form.signin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+ul.navbar-nav > li {
+    -webkit-transition: background-color 0.4s ease-out;
+    -moz-transition: background-color 0.4s ease-out;
+    -o-transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out;
+}
+
+ul.navbar-nav > li:hover {
+    background-color: #e7e7e7;
+}

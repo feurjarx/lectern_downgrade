@@ -1,0 +1,95 @@
+@media (min-width: 768px) {
+
+    .brick-review:nth-child(2n) {
+        padding-right: 0;
+    }
+
+    .brick-review:nth-child(2n + 1) {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .brick-review .panel,
+    .brick-review .panel > .panel-heading,
+    .brick-review .panel > .panel-body
+    {
+        border-radius: 0;
+    }
+    .content-title {
+        text-align: center;
+    }
+
+}
+
+.panel-heading {
+    justify-content: space-between;
+    min-height: 50px;
+}
+
+.panel-heading .panel-title {
+    align-self: center;
+}
+
+.panel-heading .rating {
+    align-self: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+.panel-body {
+    justify-content: center;
+}
+
+.panel-body .thumbnail {
+    position: relative;
+    align-self: center
+}
+
+.popover {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    z-index: inherit;
+}
+.popover > .arrow {
+    top: 50%;
+}
+
+.popover-content {
+    max-height: 100px;
+    font-size: smaller;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

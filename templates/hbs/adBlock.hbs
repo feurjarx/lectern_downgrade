@@ -1,0 +1,64 @@
+{{#if notyfication }}
+
+    <li class="alert alert-{{ type }} scroller-item" style="{{ alert_style }}">
+        <strong>
+            <span class="sr-only">Внимание!</span>{{ message }}
+        </strong>
+    </li>
+
+{{else}}
+
+    <li class="col-lg-12 col-md-12 col-xs-12 list-group-item brick scroller-item" data-id="{{ id }}">
+
+        <div class="col-lg-1 col-md-1 col-xs-2 thumbnail">
+            <img src="{{ user_img_url }}" alt="{{ person.last_name }}">
+        </div>
+
+        <div class="col-lg-11 col-lg-11 col-xs-10">
+            <div class="list-group-item-heading" data-target="#brick-details-{{ id }}" data-toggle="collapse" aria-expanded="false">
+
+                <h3 class="margin-none">
+                    <a href="javascript: void(0)" class="ellipsis-box font-size-xs" style="width: 70%">{{ name }}</a>
+                </h3>
+
+                <span>{{ person.full_name }}</span>
+                <span>({{ person.organisation }})</span>
+                <br>
+                <span>Требуется {{ sphere }}</span>
+                <br>
+                <small class="text-muted">размещено: {{ published_at }}</small>
+
+            </div>
+        </div>
+
+        {{#if is_cv_send_able}}
+
+            <div class="pull-right">
+                <button type="button" class="actions cv-send btn btn-default btn-xs">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Отправить резюме
+                </button>
+            </div>
+
+        {{/if}}
+
+        {{{ html }}}
+
+        <div class="col-lg-12 col-md-12 col-xs-12 padding-none">
+            <div class="collapse list-group-item-text" id="brick-details-{{ id }}">
+                <pre class="well margin-none">{{ details }}</pre>
+            </div>
+        </div>
+
+        <span class="badge badge-salary pull-right">
+
+            {{#if salary }}
+                {{ salary }}<i class="fa fa-rub" aria-hidden="true"></i>
+            {{else}}
+                Не указано
+            {{/if}}
+
+        </span>
+
+    </li>
+
+{{/if}}

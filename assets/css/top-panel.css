@@ -1,0 +1,31 @@
+#top-panel > .visible-part {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+}
+
+#top-panel > .visible-part > div {
+    padding: 0;
+}
+
+#top-panel .hidden-part-toggle > button.btn {
+    align-self: center;
+    margin-left: auto
+}
+
+
+.hidden-part {
+    background-color: white;
+
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .hidden-part {
+        border-radius: 0;
+    }
+}

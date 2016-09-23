@@ -1,0 +1,35 @@
+#crop-button.active {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: whitesmoke;
+}
+
+#crop-button.active:hover {
+    background-color: #4cae4c;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .img-container {
+        margin-top: 25px;
+    }
+}
+
+.img-container {
+    border-radius: 3px;
+    border-width: 3px;
+    border-color: black;
+    border-style: double;
+
+    overflow: hidden;
+
+    height: 330px;
+}
+
+.img-container img, .img-container canvas {
+    max-height: 100%;
+}
+
+.form-content {
+    padding: 15px;
+}

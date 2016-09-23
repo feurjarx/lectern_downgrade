@@ -1,0 +1,25 @@
+{
+  "name": "lectern",
+  "version": "1.0.0",
+  "description": "требуется установить (global)\r nodejs\r git\r composer\r bower",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bower": "^1.7.9",
+    "jquery": "^2.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feurjarx/lectern.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feurjarx/lectern/issues"
+  },
+  "homepage": "https://github.com/feurjarx/lectern#readme"
+}

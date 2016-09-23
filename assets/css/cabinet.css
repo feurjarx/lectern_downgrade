@@ -1,0 +1,45 @@
+.cabinet-box {
+    background-color: #F8F8F8;
+    height: auto;
+    min-height: calc(100% - 15px);
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.cabinet-actions {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .cabinet-actions-block {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .cabinet-actions .btn {
+        display: block;
+
+        width: 100%;
+
+        border-radius: 0;
+
+        margin: 0 !important;
+    }
+
+    .btn-group {
+        width: 100%;
+    }
+
+    .cabinet-menu-block {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .cabinet-menu-block {
+        padding: 0;
+    }
+}
+
+

@@ -1,0 +1,7 @@
+{
+  "require": {
+    "doctrine/orm": "*",
+    "swiftmailer/swiftmailer": "^5.4",
+    "xamin/handlebars.php": "dev-master"
+  }
+}

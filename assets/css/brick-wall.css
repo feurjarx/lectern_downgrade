@@ -1,0 +1,51 @@
+.brick-wall {
+    display: inline-block;
+}
+
+.brick-wall > .brick > .checkbox-block {
+    width: auto;
+}
+
+.brick-wall .badge-salary {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.brick-wall > .brick {
+    cursor: pointer;
+}
+.brick-wall > .brick:hover {
+    background-color: lightyellow;
+}
+
+.list-group.brick-wall {
+    width: 100%;
+    margin-bottom: -5px;
+    /*margin-top: 10px;*/
+}
+
+a[href^="#brick-details-"] {
+    vertical-align: sub;
+}
+
+div[id^="brick-details-"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.brick .thumbnail {
+    margin-bottom: 0;
+}
+
+.thumbnail img {
+    width: 80%;
+}
+
+.actions {
+    visibility: hidden;
+}
+
+.brick-wall > .brick:hover .actions {
+    visibility: visible;
+}

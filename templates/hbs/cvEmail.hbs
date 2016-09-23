@@ -1,0 +1,35 @@
+<div style="border-width: 5px; padding: 15px 30px; border-style: ridge;">
+
+    <h1>Присланное резюме от пользователя {{ fullname }}</h1>
+
+    <hr style="margin: 0 -30px;">
+
+    <p><b>Желаемая сфера деятельности: </b>{{ sphere }}</p>
+    <p><b>Имеющиеся навыки: </b>{{ skills }}</p>
+    <p><b>Рабочий стаж: </b>{{ work_experience }}</p>
+    <p><b>Готов к рабочему графику: </b>{{ schedule }}</p>
+    <p><b>Дополнительное образование: </b>{{#if ext_education }}{{ ext_education }}{{else}}не указано{{/if}}</p>
+    <p><b>Увлечения: </b>{{#if hobbies }}{{ hobbies }}{{else}}не указано{{/if}}</p>
+    <p><b>Владение иностранным языком: </b>{{#if foreign_languages }}{{ foreign_languages }}{{else}}не указано{{/if}}</p>
+    <p><b>Желаемая з/п: </b>{{#if desire_salary }}{{ desire_salary }}{{else}}не указано{{/if}}</p>
+    <p><b>О себе: </b>{{#if about }}{{ about }}{{else}}не указано{{/if}}</p>
+    <p><b>Состоит в браке: </b>{{#if is_married}}да{{ else }}нет{{/if}}</p>
+    <p><b>Наличие водительского удостоверения: </b>{{#if is_drivers_license}}да{{ else }}нет{{/if}}</p>
+    <p><b>Курит: </b>{{#if is_smoking}}да{{ else }}нет{{/if}}</p>
+
+    <hr style="margin: 0 -30px;">
+
+    <div>
+        <div style="float: right">
+            <img style="max-height: 200px; max-width: 200px;" src="{{ img_url }}" alt="{{ fullname }}">
+        </div>
+
+        <p><b>Город: </b>{{ city }}</p>
+        <p><b>Институт: </b>{{ organisation }}</p>
+        <p><b>Образование: </b>{{ education }}</p>
+        <p><b>Email: </b>{{ email }}</p>
+        <p><b>Телефон: </b>{{ phone }}</p>
+        <p><b>Веб-сайт, соц. страницы: </b>{{#if websites }}{{ websites }}{{else}}не указано{{/if}}</p>
+    </div>
+
+</div>
